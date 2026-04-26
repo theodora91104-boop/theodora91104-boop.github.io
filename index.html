@@ -1,50 +1,124 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head> 
-    <meta charset="UTF-8"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <title>Rase de pisici
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angora Turcească</title>
+
     <style>
-        .modelare{
-            width:400px;
-            float:left;
-            padding:15px}
-            #al_doilea
-            {color: aquamarine}
-    
+        body {
+            font-family: Arial;
+            color: purple;
+            overflow-x: hidden;
+        }
+
+        .modelare {
+            width: 400px;
+            float: left;
+            padding: 15px;
+        }
+
+        /* TITLU INTERACTIV */
+        .titlu-interactiv {
+            display: inline-block;
+            padding: 15px 30px;
+            border: 3px solid #ffb6c1;
+            border-radius: 15px;
+            background-color: #ffe6f0;
+            font-weight: bold;
+            font-size: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* EFECT SCLIPICI PE TITLU */
+        .titlu-interactiv::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, white, transparent);
+            transform: skewX(-25deg);
+        }
+
+        .titlu-interactiv:hover::after {
+            animation: shine 1s;
+        }
+
+        @keyframes shine {
+            100% {
+                left: 150%;
+            }
+        }
+
+        /* STIAȚI CĂ */
+        .stiati {
+            color: pink;
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
-<body>
-    <section> 
-        <article class="width:400px;float:left;padding:10px"
-            <header>
-                <h1>Angora Turcească</h1>
-                </header>
-                <main>
-                    <img src="https://media.istockphoto.com/id/1202509296/ro/fotografie/pisic%C4%83-alb%C4%83-cu-ochi-de-culoare-diferit%C4%83-angora-turceasc%C4%83-van-pisoi-cu-ochi-alba%C8%99tri-%C8%99i.jpg?s=612x612&w=0&k=20&c=EN145M5TkWSkWcfnGmu2hMCvBiSHocoyAi7BpidbOog="
-                    <p> Angora turcească este una dintre cele mai frumoase rase de pisici, de talie medie, putând fi recunoscută după blana sa semi-lungă, fină și mătăsoasă, corpul elegant și coada sa stufoasă și ascuțită. Albul imaculat este culoarea tradițională a Angorei turcești, dar pot fi de asemenea negre, albastre, crem și roșcate, cu sau fără marcaje.
 
-Este posibil ca Angora turcească să fi fost prima rasă de pisică cu părul lung din Europa, păstrându-și statutul de comoară națională în Turcia, țara de origine. Angora
-turcească este o rasă care nu lasă foarte mult păr. În ciuda blănii mătăsoase, se întreține destul de ușor. Un pieptănat săptămânal și, eventual, o baie la câteva luni este tot ce are nevoie pentru un aspect de expoziție.</p>
-                    </main>
-                    <footer>
-                        <p> Cojocaru Andreea Teodora</p>
-                        </footer>
-                    </article>
-            <article class="modelare" id="al_doilea">
-            <header>
-                <h1> British Shorthair</h1>
-            </header>
-            <main>
-                <img src="https://www.purina.ro/sites/default/files/styles/ttt_image_510/public/2021-01/British%20Shorthair.2.jpg?itok=XMXA_05s"style="height: 120px;float:left;padding;10px"
-                    <p> <mark> Pisica British Shorthair este una dintre cele mai populare rase cu pedigree. Deși există înregistrări scrise legate de această rasă doar de la începutul secolului, rasa există de câteva sute de ani. Au fost exportate în număr mare în Lumea Nouă (America), unde au devenit foarte populare. Diversitatea de culori și modele ale blănii disponibile astăzi a apărut ca urmare a creșterii selective a celor mai bune pisici maidaneze în secolul al XIX-lea și a planurilor atente de creștere menținute până în prezent.</mark></p>
-                    <p> Este o rasă relativ mare care ar putea fi descrisă drept grasă sau îndesată. Majoritatea contururilor sunt rotunjite – fața și obrajii, urechile, ochii și capul. Nasul scurt și lat este așezat deasupra unei bărbii puternice și teșite și toate acestea, împreună cu pieptul concav și coada scurtă și stufoasă, dau impresia unei pisici puternice și îndesate. Blana scurtă și deasă, fără să fie pufoasă, se găsește în peste 100 de combinații de culori și modele.</p>
-            </main>
-            <footer> 
-                <p>Cojocaru Andreea Teodora</p>
-            </footer>
-            </article>
-        </section>
- </body>
+<body>
+
+<section>
+
+    <article class="modelare">
+
+        <header>
+            <h1 class="titlu-interactiv">Angora Turcească</h1>
+        </header>
+
+        <main>
+
+            <img src="https://static.fera.ro/images/companies/1/BLOG%20RO%20-%20Catalina/BLOG%20-%20Turkish%20Angora%201.jpg?1682009353722">
+
+            <p>
+                Angora turcească este o rasă de pisică a cărei origine nu este pe deplin explicată. 
+                Cel mai adesea se presupune că și-a avut originea fără intervenția omului pe teritoriul Turciei.
+            </p>
+
+            <p>
+                Angora turcească a ajuns în Europa din SUA în a doua jumătate a secolului al XX-lea. 
+                Abia în anii 1970 a fost recunoscută oficial ca rasă.
+            </p>
+
+            <img src="https://s3.publi24.ro/vertical-ro-f646bd5a/top/20241005/0425/c7b28e2ecc516562eb8b59edfc087752.jpg">
+
+            <p>
+                Angora turcească este o pisică de talie medie. Adulții ating 30-33 cm și 2-5 kg. 
+                Are o blană semilungă și ochi migdalați care pot avea culori diferite.
+            </p>
+
+            <p>
+                Speranța de viață este de 15-18 ani. Este o rasă rezistentă.
+            </p>
+
+            <!-- STIATI CA -->
+            <h2 class="stiati">Știați că?</h2>
+
+            <p class="stiati">
+                Cu cei 2000 de ani de existență, angora turcească este una dintre cele mai vechi rase de pisici.
+                A fost adusă în Europa în secolul XVII și a devenit simbol al luxului.
+            </p>
+
+        </main>
+
+        <footer>
+            <p>Cojocaru Andreea-Teodora, SID III</p>
+        </footer>
+
+    </article>
+
+</section>
+
+</body>
 </html>
